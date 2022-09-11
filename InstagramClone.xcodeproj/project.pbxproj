@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3968E67E28CD94EC00B9AFB8 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3968E67D28CD94EC00B9AFB8 /* StoryView.swift */; };
 		396FB2BC28C98284000B5EC6 /* InstagramCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2BB28C98284000B5EC6 /* InstagramCloneApp.swift */; };
 		396FB2BE28C98284000B5EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2BD28C98284000B5EC6 /* ContentView.swift */; };
 		396FB2C028C98285000B5EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396FB2BF28C98285000B5EC6 /* Assets.xcassets */; };
@@ -14,6 +15,11 @@
 		396FB2CD28C98285000B5EC6 /* InstagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2CC28C98285000B5EC6 /* InstagramCloneTests.swift */; };
 		396FB2D728C98285000B5EC6 /* InstagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2D628C98285000B5EC6 /* InstagramCloneUITests.swift */; };
 		396FB2D928C98285000B5EC6 /* InstagramCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2D828C98285000B5EC6 /* InstagramCloneUITestsLaunchTests.swift */; };
+		396FB2E728C9874E000B5EC6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2E628C9874E000B5EC6 /* UserModel.swift */; };
+		396FB2E928C9908E000B5EC6 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2E828C9908E000B5EC6 /* StoryModel.swift */; };
+		396FB2EB28C991B8000B5EC6 /* TimelineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EA28C991B8000B5EC6 /* TimelineModel.swift */; };
+		396FB2ED28C99267000B5EC6 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EC28C99267000B5EC6 /* CommentModel.swift */; };
+		396FB2F028C99468000B5EC6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EF28C99468000B5EC6 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3968E67D28CD94EC00B9AFB8 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		396FB2B828C98284000B5EC6 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		396FB2BB28C98284000B5EC6 /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		396FB2BD28C98284000B5EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,11 @@
 		396FB2D228C98285000B5EC6 /* InstagramCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		396FB2D628C98285000B5EC6 /* InstagramCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneUITests.swift; sourceTree = "<group>"; };
 		396FB2D828C98285000B5EC6 /* InstagramCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		396FB2E628C9874E000B5EC6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		396FB2E828C9908E000B5EC6 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		396FB2EA28C991B8000B5EC6 /* TimelineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineModel.swift; sourceTree = "<group>"; };
+		396FB2EC28C99267000B5EC6 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		396FB2EF28C99468000B5EC6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3968E67C28CD94DB00B9AFB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3968E67D28CD94EC00B9AFB8 /* StoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		396FB2AF28C98284000B5EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +114,9 @@
 		396FB2BA28C98284000B5EC6 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				3968E67C28CD94DB00B9AFB8 /* Views */,
+				396FB2EE28C992E5000B5EC6 /* ViewModel */,
+				396FB2E528C9873B000B5EC6 /* Model */,
 				396FB2BB28C98284000B5EC6 /* InstagramCloneApp.swift */,
 				396FB2BD28C98284000B5EC6 /* ContentView.swift */,
 				396FB2BF28C98285000B5EC6 /* Assets.xcassets */,
@@ -125,6 +148,25 @@
 				396FB2D828C98285000B5EC6 /* InstagramCloneUITestsLaunchTests.swift */,
 			);
 			path = InstagramCloneUITests;
+			sourceTree = "<group>";
+		};
+		396FB2E528C9873B000B5EC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				396FB2E628C9874E000B5EC6 /* UserModel.swift */,
+				396FB2E828C9908E000B5EC6 /* StoryModel.swift */,
+				396FB2EA28C991B8000B5EC6 /* TimelineModel.swift */,
+				396FB2EC28C99267000B5EC6 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		396FB2EE28C992E5000B5EC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				396FB2EF28C99468000B5EC6 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396FB2EB28C991B8000B5EC6 /* TimelineModel.swift in Sources */,
+				396FB2ED28C99267000B5EC6 /* CommentModel.swift in Sources */,
 				396FB2BE28C98284000B5EC6 /* ContentView.swift in Sources */,
+				396FB2E928C9908E000B5EC6 /* StoryModel.swift in Sources */,
+				396FB2E728C9874E000B5EC6 /* UserModel.swift in Sources */,
 				396FB2BC28C98284000B5EC6 /* InstagramCloneApp.swift in Sources */,
+				3968E67E28CD94EC00B9AFB8 /* StoryView.swift in Sources */,
+				396FB2F028C99468000B5EC6 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
