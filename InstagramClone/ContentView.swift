@@ -11,6 +11,17 @@ struct ContentView: View {
     
     @ObservedObject private var viewModel = ViewModel()
     
+    //Permite que la apareciencia del navigationBar (Header), customice su apariencia.
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "tabBar-bg")
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -22,6 +33,17 @@ struct ContentView: View {
                 ScrollView{
                     VStack{
                         storyList
+                        
+                        Divider()
+                            .overlay(Color("primary"))
+                            .frame(height: 1)
+                        
+                        ForEach(viewModel.timelineList) { timeline in
+                            TimelineView(timeline: timeline)
+                        }
+                        
+                        //Corrige el problema de que el Scroll, queda escondido detras del TabView.
+                        Color.clear.padding(.bottom, 20)
                     }
                     .toolbar {
                         toolbarHeaderView()
@@ -38,8 +60,8 @@ struct ContentView: View {
                     StoryView(story: story)
                 }
             }
-            .padding(.vertical)
-            .padding(.leading, 20)
+            .padding(.leading, 10)
+            .padding(.vertical, 8)
         }
     }
     
@@ -51,11 +73,15 @@ struct ContentView: View {
                 //TODO: Action button
             } label: {
                 Image("camera-Icon")
+                    .renderingMode(.template) //Permite cambiar el color dependiendo de si es DarkMode
+                    .foregroundColor(Color("primary"))
             }
         }
         
         ToolbarItem(placement: .principal) {
             Image("instagram-logo")
+                .renderingMode(.template) //Permite cambiar el color dependiendo de si es DarkMode
+                .foregroundColor(Color("primary"))
         }
         
         ToolbarItem(placement: .navigationBarTrailing) {
@@ -64,12 +90,16 @@ struct ContentView: View {
                     //TODO: Action button
                 } label: {
                     Image("igtv")
+                        .renderingMode(.template) //Permite cambiar el color dependiendo de si es DarkMode
+                        .foregroundColor(Color("primary"))
                 }
                 
                 Button {
                     //TODO: Action button
                 } label: {
                     Image("messenger")
+                        .renderingMode(.template) //Permite cambiar el color dependiendo de si es DarkMode
+                        .foregroundColor(Color("primary"))
                 }
             }
         }

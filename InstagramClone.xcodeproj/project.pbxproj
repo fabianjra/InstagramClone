@@ -20,6 +20,8 @@
 		396FB2EB28C991B8000B5EC6 /* TimelineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EA28C991B8000B5EC6 /* TimelineModel.swift */; };
 		396FB2ED28C99267000B5EC6 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EC28C99267000B5EC6 /* CommentModel.swift */; };
 		396FB2F028C99468000B5EC6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396FB2EF28C99468000B5EC6 /* ViewModel.swift */; };
+		400A6BC028E3E1730043E006 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A6BBF28E3E1730043E006 /* TimelineView.swift */; };
+		400A6BC228E3E17A0043E006 /* TabViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A6BC128E3E17A0043E006 /* TabViewCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		396FB2EA28C991B8000B5EC6 /* TimelineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineModel.swift; sourceTree = "<group>"; };
 		396FB2EC28C99267000B5EC6 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		396FB2EF28C99468000B5EC6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		400A6BBF28E3E1730043E006 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		400A6BC128E3E17A0043E006 /* TabViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				3968E67D28CD94EC00B9AFB8 /* StoryView.swift */,
+				400A6BBF28E3E1730043E006 /* TimelineView.swift */,
+				400A6BC128E3E17A0043E006 /* TabViewCustom.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,7 +312,9 @@
 				396FB2E728C9874E000B5EC6 /* UserModel.swift in Sources */,
 				396FB2BC28C98284000B5EC6 /* InstagramCloneApp.swift in Sources */,
 				3968E67E28CD94EC00B9AFB8 /* StoryView.swift in Sources */,
+				400A6BC028E3E1730043E006 /* TimelineView.swift in Sources */,
 				396FB2F028C99468000B5EC6 /* ViewModel.swift in Sources */,
+				400A6BC228E3E17A0043E006 /* TabViewCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
